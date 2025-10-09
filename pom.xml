@@ -6,29 +6,40 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.5.6</version>
-		<relativePath/>
 	</parent>
+	
 	<groupId>com.taskmanager</groupId>
 	<artifactId>task-management-system</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>task-management-system</name>
 	<description>Task Management System with Spring Boot</description>
-	<url/>
+
 	<licenses>
-		<license/>
+  	<license>
+    	<name>MIT License</name>
+    	<url>https://opensource.org/licenses/MIT</url>
+    	<distribution>repo</distribution>
+  	</license>
 	</licenses>
+
 	<developers>
-		<developer/>
+		<developer>
+			<id>phandor</id>
+			<name>Dorel Phan</name>
+			<email>phan.dorel.lam@gmail.com</email>
+		</developer>
 	</developers>
+
 	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
+		<connection>scm:git:https://github.com/phandor/java-task-management-system.git</connection>
+		<developerConnection>git@github.com:phandor/java-task-management-system.git</developerConnection>
+		<url>https://github.com/phandor/java-task-management-system/tree/main</url>
 	</scm>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
