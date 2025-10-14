@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TaskManagerApplication {
 
-  @GetMapping("/helloworld")
+  @GetMapping("/taskmanager")
   public String sayHello() {
-    return "Hello World!";
+    return "Willkommen in der Task Manager Applikation!";
   }
 
   public static void main(String[] args) {
