@@ -2,6 +2,7 @@ package com.taskmanager.entity;
 
 import java.time.LocalDateTime;
 
+import jakarta.persistence.*;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -45,7 +46,18 @@ public class Task {
   @Column(name = "due_date")
   private String dueDate;
 
-  // constructor
+  @PrePersist
+  protected void onCreate() {
+    this.createdAt = LocalDateTime.now();
+    this.updatedAt = LocalDateTime.now();
+  }
+
+  @PreUpdate
+  protected void onUpdate() {
+    this.updatedAt = LocalDateTime.now();
+  }
+
+  // cunstructor
   public Task(
       String title,
       String description,
@@ -63,6 +75,7 @@ public class Task {
     this.updatedAt = LocalDateTime.now();
   }
 
+  // getters and setters
   public Long getId() {
     return id;
   }
