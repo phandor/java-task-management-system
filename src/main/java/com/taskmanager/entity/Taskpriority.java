@@ -1,6 +1,6 @@
 package com.taskmanager.entity;
 
-public enum Taskpriority {
+public enum TaskPriority {
 
   // Lowest priority
   LOW,

@@ -35,7 +35,7 @@ public class Task {
   private Status status = Status.PENDING;
 
   @Enumerated(EnumType.STRING)
-  private Taskpriority priority = Taskpriority.MEDIUM;
+  private TaskPriority priority = TaskPriority.MEDIUM;
 
   @Column(name = "created_at")
   private LocalDateTime createdAt;
